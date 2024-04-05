@@ -13,4 +13,6 @@ moveToRear(); moves the element at the front of the queue to the end and shift t
 
 The linear_search() function takes 3 parameters a vector/array, a target and an index that represents the size of the vector/array - 1 since it works backwards.
 
-The insertionSort() function takes a vector/array and sorts it in ascending order.
+The insertionSort() function is part of the linkedList class defined in queue.h:
+it does not return anything it is a method that can be used on a instantiation of the linkedList class.
+It sorts the linked list using the insertion sort technique.
