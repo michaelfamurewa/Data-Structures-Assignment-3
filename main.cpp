@@ -1,5 +1,5 @@
 #include "queue.h"
-#include "searchAndSort.h"
+#include "linearSearch.h"
 
 using namespace std;
 
@@ -28,10 +28,20 @@ int main() {
     cout << "\nLast occurrence of 2 in [1,2,3,4,5,2,5,6]: index ";
     cout << linear_search(vec,2,vec.size()-1);
 
-    insertionSort(vec);
+    cout << "\n\nUnsorted List:" << endl;
+    linkedList list;
+    list.push_back(1);
+    list.push_back(2);
+    list.push_back(3);
+    list.push_back(4);
+    list.push_back(5);
+    list.push_back(2);
+    list.push_back(5);
+    list.push_back(6);
+    list.print();
+
     cout << "\n\nSorted List: " << endl;
-   for(int x = 0; x < vec.size();x++){
-       cout << vec[x] << " ";
-   }
+    list.insertionSort();
+    list.print();
     return 0;
 }
